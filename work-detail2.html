@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Work detail</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- Fonts-->
+		<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon/pe-icon.css">
+		<!-- Vendors-->
+		<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/swiper/swiper.css">
+		<!-- App & fonts-->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:400,700">
+		<link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css"><!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		<div class="page-wrap" id="root">
+			
+			<!-- header -->
+			<header class="header header--fixed">
+				<div class="header__inner">
+					<div class="header__logo"><a href="index.html"><img src="assets/img/logo.png" alt="" style="width: 140px;"/></a></div>
+					<div class="navbar-toggle" id="fs-button">
+						<div class="navbar-icon"><span></span></div>
+					</div>
+				</div>
+				
+				<!-- fullscreenmenu__module -->
+				<div class="fullscreenmenu__module" trigger="#fs-button">
+					
+					<!-- overlay-menu -->
+					<nav class="overlay-menu">
+						
+						<!--  -->
+						<ul class="wil-menu-list">
+							<li><a href="index.html">Home</a>
+							</li>
+							<li><a href="work.html">Work</a>
+							</li>
+						</ul><!--  -->
+						
+					</nav><!-- End / overlay-menu -->
+					
+				</div><!-- End / fullscreenmenu__module -->
+				
+			</header><!-- End / header -->
+			
+			<!-- Content-->
+			<div class="wil-content">
+				
+				<!-- Section -->
+				<section class="awe-section">
+					<div class="container">
+						
+						<!-- page-title -->
+						<div class="page-title pb-40">
+							<h2 class="page-title__title">Artifact 3: Amazon Web Service Backend</h2>
+							<p class="page-title__text">From SQLite to Cloud-Based Database </p>
+							<div class="page-title__divider"></div>
+						</div><!-- End / page-title -->
+						
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+				
+				<!-- Section -->
+				<section class="awe-section bg-gray">
+					<div class="container">
+						
+						<!--  -->
+						<div>
+							<!-- title -->
+							<div class="title">
+								<h2 class="title__title">Narrative</h2>
+							</div><!-- End / title -->
+							<div class="work-detail__entry">
+								<p>The artifact for this milestone is an Amazon Web Services (AWS) API integrated into an Android application. 
+									The Android application was initially designed during a summer course on mobile applications in May. 
+									We used an SQLite database to store our data. 
+									However, a significant limitation of this approach is that users can only access data on their own devices. 
+									Consequently, they cannot log in to their accounts from another device. 
+									To address this issue, my goal was to create a database equivalent to the SQLite version but accessible over the internet. 
+									I achieved this by leveraging the power of cloud computing, specifically using a serverless architecture.
+								</p>
+
+								<div class="work-img" style="text-align: center;">
+									<img src="assets/img/works/03/img1.png" alt="">
+								</div>
+								<br>
+
+								<p>A serverless architecture allowed me to focus on the application logic while delegating server management and scaling to Amazon, the service provider. 
+									The AWS services I used include API Gateway, Lambda, and DynamoDB. 
+									API Gateway enables me to create a RESTful API to access other AWS services. 
+									Lambda provides the logic to handle database calls, which then interact with the DynamoDB database. 
+									Fortunately, AWS uses HTTPS, ensuring that data sent over the network is encrypted. 
+									Additionally, I chose to use SHA-256 hashing to store only encrypted passwords at rest. 
+									This demonstrates an awareness of security principles and practices. 
+									Furthermore, sensitive information is kept in the request body to avoid being logged. 
+									I have also configured throttling for both API Gateway and the database to prevent the service from being spammed or becoming unmanageable. 
+									These four concepts—HTTPS, encryption at rest, request body storage, and throttling—offer basic security functionality.</p>
+								<p>Given the points mentioned above, I believe I have satisfied the following outcomes with this milestone:</p>
+
+								<ol>
+									<li><b>Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices to implement computer solutions that deliver value and accomplish industry-specific goals.</b></li><br>
+									<li><b>Develop a security mindset that anticipates adversarial exploits in software architecture and design, exposing potential vulnerabilities, mitigating design flaws, and ensuring privacy and enhanced security of data and resources.</b></li>
+								</ol>
+
+								<p> Unfortunately, although the database and API were completed, the Android integration is coded but not fully functional. 
+									Android requires requests to be asynchronous, and I have attempted to address this issue, but it still fails to find the URL resource. 
+									That said, the API has been fully tested using Postman, and I have attached test commands for your verification. 
+									Android integration and encryption posed the biggest challenges. 
+									I initially attempted to use bcrypt by compiling the library in an EC2 instance and adding it to my Lambda functions, but it seemed unsupported. 
+									Therefore, I opted to use hashlib instead.
+								</p>
+
+								<p> <b>The code for this artifact can be found here: <a href="https://github.com/JogginTheNoggin/CS-499-Capstone/tree/main/artifact3">Project Files</a> </b></p>
+								<br>
+								<div class="work-img" style="text-align: center;">
+									<img src="assets/img/works/03/img2.png" alt="">
+								</div>
+								
+								<div class="work-img" style="text-align: center;">
+									<img src="assets/img/works/03/img3.png" alt="">
+								</div>
+								
+							</div>
+	
+						
+						<div class="awe-text-center mt-50">
+							<a class="md-btn md-btn--outline-primary " href="work.html">All work
+							</a>
+						</div>
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+			</div>
+			<!-- End / Content-->
+			
+			<!-- footer -->
+			<div class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-lg-6 ">
+							<p class="footer__coppy">2024 &copy; Copyright Awe7. All rights Reserved.</p>
+						</div>
+						<div class="col-md-6 col-lg-6 ">
+							<div class="footer__social">
+								
+								<!-- social-icon -->
+								<a class="social-icon" href="https://www.linkedin.com/in/jeremiah-benjamin-489607183/"><i class="social-icon__icon fa fa-linkedin"></i>
+								</a><!-- End / social-icon -->
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- End / footer -->
+			
+		</div>
+		<!-- Vendors-->
+		<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.easing/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/swiper/swiper.jquery.js"></script>
+		<script type="text/javascript" src="assets/vendors/menu/menu.js"></script>
+		<script type="text/javascript" src="assets/vendors/typed/typed.min.js"></script>
+		<!-- App-->
+		<script type="text/javascript" src="assets/js/main.js"></script>
+	</body>
+</html>

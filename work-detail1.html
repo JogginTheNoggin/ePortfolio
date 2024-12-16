@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Work detail</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- Fonts-->
+		<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon/pe-icon.css">
+		<!-- Vendors-->
+		<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/swiper/swiper.css">
+		<!-- App & fonts-->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:400,700">
+		<link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css"><!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		<div class="page-wrap" id="root">
+			
+			<!-- header -->
+			<header class="header header--fixed">
+				<div class="header__inner">
+					<div class="header__logo"><a href="index.html"><img src="assets/img/logo.png" alt="" style="width: 140px;"/></a></div>
+					<div class="navbar-toggle" id="fs-button">
+						<div class="navbar-icon"><span></span></div>
+					</div>
+				</div>
+				
+				<!-- fullscreenmenu__module -->
+				<div class="fullscreenmenu__module" trigger="#fs-button">
+					
+					<!-- overlay-menu -->
+					<nav class="overlay-menu">
+						
+						<!--  -->
+						<ul class="wil-menu-list">
+							<li><a href="index.html">Home</a>
+							</li>
+							<li><a href="work.html">Work</a>
+							</li>
+
+						</ul><!--  -->
+						
+					</nav><!-- End / overlay-menu -->
+					
+				</div><!-- End / fullscreenmenu__module -->
+				
+			</header><!-- End / header -->
+			
+			<!-- Content-->
+			<div class="wil-content">
+				
+				<!-- Section -->
+				<section class="awe-section">
+					<div class="container">
+						
+						<!-- page-title -->
+						<div class="page-title pb-40">
+							<h2 class="page-title__title">Artifact 2: Raycast 3d Voxel Rendering</h2>
+							<p class="page-title__text">3D Graphics Using DDA Raycasting Algorithm </p>
+							<div class="page-title__divider"></div>
+						</div><!-- End / page-title -->
+						
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+				
+				<!-- Section -->
+				<section class="awe-section bg-gray">
+					<div class="container">
+						<!-- title -->
+						<div class="title">
+							<h2 class="title__title">Narrative</h2>
+						</div><!-- End / title -->
+						<!--  -->
+						<div>
+							<div class="work-detail__entry">
+								<p>For Milestone Three, the artifact in question was an OpenGL 3D scene. 
+									The initial development occurred during the summer of this year for my graphics programming class. 
+									However, the improvement is more of a complete overhaul than a simple update. 
+									Rasterization was the rendering technique initially used, which, in short, involves processing vertices and triangles. 
+									In contrast, the completed milestone utilizes raycasting to render cubes on the screen, each representing a voxel. 
+									One significant benefit of this approach is the constant processing time required to render a frame, assuming the ray depth remains constant, regardless of the number of voxels on the screen. 
+									This rendering technique is particularly relevant to the milestone due to its efficiency in handling large amounts of microgeometry.
+								</p>
+
+								<div class="work-img" style="text-align: center;">
+									<img src="assets/img/works/02/img1.png" alt="">
+								</div>
+								<br>
+
+								<p>For instance, if we attempted to render a 3D scene with cubes (voxels) at half their size, 
+									the rasterization technique would need to process twice as many cubes. 
+									In comparison, the raycasting technique would not experience such an increase because there is one ray per screen-resolution pixel. 
+									Aside from these changes, lighting and texturing have been improved, as well as terrain generation.
+								</p>
+								
+								<p>Given the points mentioned above, I believe I have satisfied the following outcomes with this milestone:</p>
+
+								<ol>
+									<li><b>Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while managing the trade-offs involved in design choices
+									</b></li>
+								</ol>
+
+								<p>Therefore, I have no updates regarding the feasibility of reaching all outcomes.</p>
+
+								<p>Some major concepts I learned during the development of this milestone include raycasting, 
+									ray-based texturing, ray-based diffuse lighting, terrain generation, 3D textures, and texture sampling, among others.
+									There were many challenges, with the toughest being tracking down the causes of graphical artifacts. 
+									This is particularly difficult because the shader language lacks a console for logging results, leading to a lot of trial and error. 
+									Additionally, I have not yet developed a solution to update only the newly generated terrain, 
+									which forces me to resubmit all parts of the terrain to the GPU every time the camera moves to a new chunk. 
+									This is highly inefficient and something I intend to address.
+								</p>
+								
+								<p> <b>The code for this artifact can be found here: <a href="https://github.com/JogginTheNoggin/CS-499-Capstone/tree/main/artifact2">Project Files</a> </b></p>
+								<br>
+								
+							</div>
+							
+						</div><!-- End /  -->
+						
+						<div class="awe-text-center mt-50">
+							<a class="md-btn md-btn--outline-primary " href="work.html">All work
+							</a>
+						</div>
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+			</div>
+			<!-- End / Content-->
+			
+			<!-- footer -->
+			<div class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-lg-6 ">
+							<p class="footer__coppy">2024 &copy; Copyright Awe7. All rights Reserved.</p>
+						</div>
+						<div class="col-md-6 col-lg-6 ">
+							<div class="footer__social">
+								
+								<!-- social-icon -->
+								<a class="social-icon" href="https://www.linkedin.com/in/jeremiah-benjamin-489607183/"><i class="social-icon__icon fa fa-linkedin"></i>
+								</a><!-- End / social-icon -->
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- End / footer -->
+			
+		</div>
+		<!-- Vendors-->
+		<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.easing/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/swiper/swiper.jquery.js"></script>
+		<script type="text/javascript" src="assets/vendors/menu/menu.js"></script>
+		<script type="text/javascript" src="assets/vendors/typed/typed.min.js"></script>
+		<!-- App-->
+		<script type="text/javascript" src="assets/js/main.js"></script>
+	</body>
+</html>
